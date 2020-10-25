@@ -1,3 +1,16 @@
-.second {
-    background-color: #e7dbdb;
+td,
+th {
+    box-sizing: border-box;
+    color: #272727;
+    border: none;
+    width: 150px;
+    height: 60px;
+}
+
+td {
+    border-top: 3px solid #e9e6e6;
+}
+
+.first {
+    background-color: #e9ecf6;
 }

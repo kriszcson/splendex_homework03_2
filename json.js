@@ -6,20 +6,20 @@ fetch('https://my.api.mockaroo.com/users.json?key=533a0b60')
             let temp = "";
             let i = 1
             data.forEach(u => {
-                if (i % 2 === 0) {
-                    temp += "<tr>";
-                    temp += "<td class = first>" + u.i + "</td>"
-                    temp += "<td class = first>" + u.f + "</td>"
-                    temp += "<td class = first>" + u.l + "</td>"
-                    temp += "<td class = first>" + u.e + "</td>"
-                    temp += "<td class = first>" + u.g + "</td></tr>"
+                if (i % 2 !== 0) {
+                    temp += "<tr class = first>";
+                    temp += "<td>" + u.i + "</td>"
+                    temp += "<td>" + u.f + "</td>"
+                    temp += "<td>" + u.l + "</td>"
+                    temp += "<td>" + u.e + "</td>"
+                    temp += "<td>" + u.g + "</td></tr>"
                 } else {
-                    temp += "<tr>";
-                    temp += "<td class = second>" + u.i + "</td>"
-                    temp += "<td class = second>" + u.f + "</td>"
-                    temp += "<td class = second>" + u.l + "</td>"
-                    temp += "<td class = second>" + u.e + "</td>"
-                    temp += "<td class = second>" + u.g + "</td></tr>"
+                    temp += "<tr class = second>";
+                    temp += "<td>" + u.i + "</td>"
+                    temp += "<td>" + u.f + "</td>"
+                    temp += "<td>" + u.l + "</td>"
+                    temp += "<td>" + u.e + "</td>"
+                    temp += "<td>" + u.g + "</td></tr>"
                 }
                 i++;
             })
